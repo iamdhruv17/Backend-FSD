@@ -53,6 +53,12 @@ app.get("/rectangle/perimeter",(req,res)=>{
     return res.json({perimeter:perr});
 })
 
+
+app.get("/rectangle/a")
+
+
+
+
 app.listen(8000,()=>{
     console.log("server started");
 });
