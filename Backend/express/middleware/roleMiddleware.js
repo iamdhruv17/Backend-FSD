@@ -10,7 +10,7 @@ const checkrole = (...allowedroles) => {
       return next();
     }
 
-    return res.status(403).json({ message: "Role is not allowed" });
+    return res.status(401).json({ message: "Role is not allowed" });
   };
 };
 
