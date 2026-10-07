@@ -1,4 +1,7 @@
 const mongoose=require('mongoose');
+const { generateTokenRefresh } = require('../utils/jwt');
+// import tokenAccess
+const 
 const studentSchema=new mongoose.Schema({
     user:{
         type:Sting,
@@ -14,6 +17,19 @@ const studentSchema=new mongoose.Schema({
         required:true
 
     }
+    tokenAccess:{
+        type:String,
+        required:true
+
+
+    }
+    tokenRefresh:{
+        type:String,
+        required:true
+
+    }
+
+
 
 
 })

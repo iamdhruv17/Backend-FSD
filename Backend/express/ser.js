@@ -2,7 +2,9 @@ import 'dotenv/config';
 import mongoose from "mongoose";
 import express from "express";
 import StudentRoutes from "./Router/studentRouter.js";
+import cookieParser from "cookie-parser"
 const app=express();
+app.use(cookieParser())
 app.use(express.json());
 const PORT=process.env.PORT || 3000;
 
